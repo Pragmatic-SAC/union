@@ -11,7 +11,8 @@
         'Kelvin Meza <kmeza@pragmatic.com.pe>',
     ],
     'depends': [
-        'jwt_provider'
+        'jwt_provider',
+        'vista_backend_theme'
     ],
     'external_dependencies': {},
     'data': [
