@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem
+            id="union_root_menu"
+            sequence="1"
+            name="Union"
+            groups="union.group_manager"
+            web_icon="union,static/description/icon.png"/>
+    <menuitem id="union_transporter_menu"
+              name="Transporter"
+              parent="union_root_menu"
+              sequence="1"/>
+
+</odoo>

@@ -11,10 +11,14 @@
         'Kelvin Meza <kmeza@pragmatic.com.pe>',
     ],
     'depends': [
-        'muk_rest'
+        'jwt_provider'
     ],
     'external_dependencies': {},
     'data': [
+        'security/ir.model.access.csv',
+        'security/security.xml',
+        'views/union_transporter.xml',
+        'views/union_transporter_menu.xml',
     ],
     'images': [
     ],

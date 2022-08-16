@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="union_transporter_tree" model="ir.ui.view">
+        <field name="name">union.transporter.tree</field>
+        <field name="model">union.transporter</field>
+        <field name="arch" type="xml">
+            <tree string="Union Transporter">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+    <record id="union_transporter_form" model="ir.ui.view">
+        <field name="name">union.transporter.form</field>
+        <field name="model">union.transporter</field>
+        <field name="arch" type="xml">
+            <form string="Union Transporter">
+                <sheet>
+                    <group string="Transporter">
+                        <group>
+                            <field name="name"/>
+                        </group>
+                        <group>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="union_transporter_search" model="ir.ui.view">
+        <field name="name">union.transporter.search</field>
+        <field name="model">union.transporter</field>
+        <field name="type">search</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <filter name="active" string="Active" domain="[('active','=',True)]"
+                        help="Show active"/>
+                <filter name="inactive" string="Archived" domain="[('active','=',False)]"
+                        help="Show archived"/>
+            </search>
+        </field>
+    </record>
+    <record id="union_transporter_action" model="ir.actions.act_window">
+        <field name="name">Union Transporter</field>
+        <field name="res_model">union.transporter</field>
+        <field name="view_mode">tree,form</field>
+        <field name="search_view_id" ref="union_transporter_search"/>
+        <field name="domain"></field>
+    </record>
+</odoo>
