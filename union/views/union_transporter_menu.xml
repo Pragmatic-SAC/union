@@ -9,6 +9,7 @@
     <menuitem id="union_transporter_menu"
               name="Transporter"
               parent="union_root_menu"
+              action="union_transporter_action"
               sequence="1"/>
 
 </odoo>

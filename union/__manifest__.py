@@ -15,8 +15,8 @@
     ],
     'external_dependencies': {},
     'data': [
-        'security/ir.model.access.csv',
         'security/security.xml',
+        'security/ir.model.access.csv',
         'views/union_transporter.xml',
         'views/union_transporter_menu.xml',
     ],
